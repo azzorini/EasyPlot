@@ -1,0 +1,36 @@
+
+
+*******************************************************************************
+Fri Nov 23 18:03:12 2018
+
+
+FIT:    data read from "/home/docchigo/Fisica/MyO/Practicas/M20_FOUCAULT/Data2/Graficor.txt"
+        format = z
+        #datapoints = 31
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.3611131345e+08   0.00e+00  1.48e+03    1.000000e+00   1.000000e+00
+   7 1.5133378335e-03  -3.28e-08  1.48e-04   -6.782470e-05   1.530115e+00
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.00151334
+rel. change during last iteration : -3.28125e-13
+
+degrees of freedom    (FIT_NDF)                        : 29
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00722385
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.21841e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -6.78247e-05     +/- 1.209e-06    (1.782%)
+b               = 1.53011          +/- 0.002533     (0.1656%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.859  1.000 

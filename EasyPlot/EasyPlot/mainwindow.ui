@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>765</width>
+    <height>668</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EasyPlot</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="iconseasyplot.qrc">
+    <normaloff>:/Images/easyplot_icon.png</normaloff>:/Images/easyplot_icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_graph">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>671</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>765</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuste">
+    <property name="title">
+     <string>Ajuste</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionLineal"/>
+    <addaction name="actionCuadr_tico"/>
+    <addaction name="actionExponencial"/>
+    <addaction name="separator"/>
+    <addaction name="actionValores_Iniciales"/>
+   </widget>
+   <widget class="QMenu" name="menuGraficar">
+    <property name="title">
+     <string>Graficar</string>
+    </property>
+    <addaction name="actionConfiguraci_n"/>
+    <addaction name="separator"/>
+    <addaction name="actionGraficar"/>
+    <addaction name="actionGuardar"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuAjuste"/>
+   <addaction name="menuGraficar"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAbrir"/>
+   <addaction name="separator"/>
+   <addaction name="actionLineal"/>
+   <addaction name="separator"/>
+   <addaction name="actionConfiguraci_n"/>
+   <addaction name="actionGraficar"/>
+   <addaction name="actionGuardar"/>
+  </widget>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="iconseasyplot.qrc">
+     <normaloff>:/Images/Open-file-icon.png</normaloff>:/Images/Open-file-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="toolTip">
+    <string>Abrir archivo</string>
+   </property>
+  </action>
+  <action name="actionLineal">
+   <property name="icon">
+    <iconset resource="iconseasyplot.qrc">
+     <normaloff>:/Images/regression_icon.png</normaloff>:/Images/regression_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lineal</string>
+   </property>
+   <property name="toolTip">
+    <string>Ajuste Lineal</string>
+   </property>
+  </action>
+  <action name="actionCuadr_tico">
+   <property name="text">
+    <string>Cuadrático</string>
+   </property>
+  </action>
+  <action name="actionExponencial">
+   <property name="text">
+    <string>Exponencial</string>
+   </property>
+  </action>
+  <action name="actionConfiguraci_n">
+   <property name="icon">
+    <iconset resource="iconseasyplot.qrc">
+     <normaloff>:/Images/configuracion_icon.png</normaloff>:/Images/configuracion_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configuración</string>
+   </property>
+   <property name="toolTip">
+    <string>Configuración Gráfica</string>
+   </property>
+  </action>
+  <action name="actionGraficar">
+   <property name="icon">
+    <iconset resource="iconseasyplot.qrc">
+     <normaloff>:/Images/gnuplot_icon.png</normaloff>:/Images/gnuplot_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Graficar</string>
+   </property>
+  </action>
+  <action name="actionValores_Iniciales">
+   <property name="text">
+    <string>Valores Iniciales</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="iconseasyplot.qrc">
+     <normaloff>:/Images/Save-file-icon.png</normaloff>:/Images/Save-file-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="toolTip">
+    <string>Guardar Gráfica</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="iconseasyplot.qrc"/>
+ </resources>
+ <connections/>
+</ui>

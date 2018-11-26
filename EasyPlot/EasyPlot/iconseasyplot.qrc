@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../Images/Open-file-icon.png</file>
+        <file>../Images/gnuplot_icon.png</file>
+        <file>../Images/configuracion_icon.png</file>
+        <file>../Images/regression_icon.png</file>
+        <file>../Images/Save-file-icon.png</file>
+        <file>../Images/easyplot_icon.png</file>
+    </qresource>
+</RCC>
